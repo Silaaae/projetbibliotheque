@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+ 
+ 
+    .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images_project/hatsune-miku-pink-hair-sakura-blossom-twintails-wallpaper-preview.jpg') no-repeat center center/cover;
+}
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+  
+    .content-container {
+        position: relative;
+        z-index: 1;
+        background: #ffcfe5; 
+        padding: 20px;
+        margin: 20px auto;
+        width: 500px;
+        height: 600px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+  
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+   
+    form {
+        padding: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333; 
+        font-weight: bold;
+        font-size: 14px; 
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #007c19;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #ff0404;
+    }
+    
+    #error-message {
+        color: red;
+        margin-top: 10px;
+    }
+  </style>
+  
+  <title>User Management - Login</title>*
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="content-container">
+ 
+
+    <main>
+        <h2>Log In</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" required>
+            <input type="checkbox" id="showLoginPasswordCheckbox" onclick="toggleLoginPasswordVisibility()">
+            <label for="showLoginPasswordCheckbox">Show Password</label>
+          </div>
+          <button type="submit">Log In</button>
+          <div id="login-error-message"></div>
+        </form>
+      
+        <h2>Sign Up</h2>
+        <form id="sign-up-form">
+          <div class="form-group">
+            <label for="new-email">Email:</label>
+            <input type="email" id="new-email" name="new-email" required>
+          </div>
+          <div class="form-group">
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <input type="checkbox" id="showNewPasswordCheckbox" onclick="toggleNewPasswordVisibility()">
+            <label for="showNewPasswordCheckbox">Show Password</label>
+          </div>
+          <button type="submit">Sign Up</button>
+          <div id="sign-up-error-message"></div>
+        </form>
+      </main>
+      
+
+  <script>
+    const registeredUsers = [
+      { email: "user1@example.com", password: "password1" },
+      { email: "cupkace@example.com", password: "password2" },
+      { email: "MIMO@example.com", password: "password2" },
+      { email: "nousnous@example.com", password: "pass32455" },
+      { email: "NNI@example.com", password: "AZSEDR123" }
+    ];
+    
+    const loginForm = document.getElementById('login-form');
+    const loginErrorMessage = document.getElementById('login-error-message');
+    const signUpForm = document.getElementById('sign-up-form');
+    const signUpErrorMessage = document.getElementById('sign-up-error-message');
+    
+    loginForm.addEventListener('submit', async (event) => {
+      event.preventDefault(); 
+    
+      const loginEmail = document.getElementById('login-email').value;
+      const loginPassword = document.getElementById('login-password').value;
+    
+      try {
+      
+        const user = registeredUsers.find(user => user.email === loginEmail && user.password === loginPassword);
+    
+        if (user) {
+      
+          loginErrorMessage.textContent = ''; 
+          loginForm.reset();
+          alert('Login successful!');
+          window.location.href = "projecthtml.html";
+        } else {
+          throw new Error('Invalid email or password');
+        }
+      } catch (error) {
+        loginErrorMessage.textContent = error.message; 
+      }
+    });
+    
+    signUpForm.addEventListener('submit', async (event) => {
+      event.preventDefault(); 
+    
+      const newEmail = document.getElementById('new-email').value;
+      const newPassword = document.getElementById('new-password').value;
+    
+      try {
+     
+        const userExists = registeredUsers.some(user => user.email === newEmail);
+    
+        if (!userExists) {
+          
+          if (newPassword.length >= 6) {
+        
+          
+            registeredUsers.push({ email: newEmail, password: newPassword });
+            signUpErrorMessage.textContent = ''; 
+            signUpForm.reset(); 
+            
+            window.location.href = "projecthtml.html";
+            
+          } else {
+            throw new Error('Password must be at least 6 characters long');
+          }
+        } else {
+          throw new Error('Email already exists');
+        }
+      } catch (error) {
+        signUpErrorMessage.textContent = error.message; 
+      }
+    });
+    
+    function toggleLoginPasswordVisibility() {
+      const loginPasswordInput = document.getElementById('login-password');
+      if (loginPasswordInput.type === "password") {
+        loginPasswordInput.type = "text";
+      } else {
+        loginPasswordInput.type = "password";
+      }
+    }
+    
+    function toggleNewPasswordVisibility() {
+      const newPasswordInput = document.getElementById('new-password');
+      if (newPasswordInput.type === "password") {
+        newPasswordInput.type = "text";
+      } else {
+        newPasswordInput.type = "password";
+      }
+    }
+    </script>
+
+</body>
+</html>

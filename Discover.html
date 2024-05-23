@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="stylesheet" href="project.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <div class="background"></div>
+    <div class="content-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\projecthtml.html">Home</a></li>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\Discover.html">Generate</a></li>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\Mypage.html">Explore</a> <span class="panier-count">0</span></li>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\login.html">Log IN</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <h1>Discover</h1>
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by title...">
+            <select id="search-option">
+                <option value="title">Title</option>
+            </select>
+            <button type="button" onclick="searchBookss()">Search</button>
+            <select id="search-category">
+                <option value="all">All Categories</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="action">Action</option>
+                <option value="fiction">Fiction</option>
+                <option value="drama">drama</option>
+                <option value="horror">horror</option>
+                <option value="thriller">thriller</option>
+                <!-- Add more options for other categories -->
+            </select>
+            <button type="button" onclick="searchByCategory()">Search by Category</button>
+        </div>
+        <button id="show-favorites-btn">Show Favorites</button>
+        <button id="show-read-later-btn">Show Read Later</button>
+
+      
+    </header>
+</head>
+<body>
+    
+       
+   
+    <main>
+        <section class="Books-list">
+            <!-- Books 1 -->
+            <div class="Books">   <div class="rating">
+                ★★★★☆(91,6%)
+            </div>
+                <img src= "images_project\amava-kalisamipresent.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Echoes of Eternity</h2>
+                    <p class="Books-description">In a world where time is a fluid concept, a young protagonist discovers the key to unlocking the secrets of the past and the mysteries of the future. "Echoes of Eternity" is a gripping tale of adventure, love, and the relentless pursuit of truth</p>
+                    <p class="Books-genre">Genre: fantazy</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(91,6%)
+            </div>
+                <img src="images_project\anime-girl-wallpaper-4k-best-purple-wallpaper-v0-c2R4ZzMxejg0dXZjMTkzlWbfz3ccF2si-SnE3tJvXXr2koBsiq70Ns-foAoP.webp" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Whispers in the Mist</h2>
+                    <p class="Books-description">"Whispers in the Mist" follows the journey of a lost soul seeking redemption amidst the whispers of forgotten spirits and the shadows of forgotten dreams.</p>
+                    <p class="Books-genre">Genre: action</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(92,6%)
+            </div>
+                <img src="images_project\mysterious-tree-ai-2560x1440-14954.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Sands of Serenity</h2>
+                    <p class="Books-description">"Sands of Serenity" is a sweeping epic of betrayal, redemption, and the enduring power of the human spirit in the face of adversity.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(94,6%)
+            </div>
+                <img src= "images_project\10025.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Shadows of the Moon</h2>
+                    <p class="Books-description">"Shadows of the Moon" is a mesmerizing tale of courage, sacrifice, and the eternal struggle between light and darkness.</p>
+                    <p class="Books-genre">Genre: thriller,horror</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(89,6%)
+            </div>
+                <img src="images_project\208981_red-tears-4k-anime-wallpapers_3840x2160_h.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Echoes of Destiny</h2>
+                    <p class="Books-description">"Echoes of Destiny" is an epic fantasy adventure filled with thrilling battles, unexpected alliances, and the power of hope in the face of despair.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(89,1%)
+            </div>
+                <img src= "images_project\HD-wallpaper-forest-fantasy-blueeyes-girl-butterflies-night.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Crimson Skies of Redemption</h2>
+                    <p class="Books-description"> "Crimson Skies of Redemption" follows the journey of a reluctant hero who must confront his own demons while leading a band of misfits on a quest for peace. As the skies darken with the shadows of war, redemption may be the only light left to guide them.</p>
+                    <p class="Books-genre">Genre: Fiction,action,drama</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(90,6%)
+            </div>
+                <img src="images_project\HD-wallpaper-rose-red-vocaloid-redhead-manga-black-dizzyzebra-girl-purple-anime-face.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Whispers of the Forgotten</h2>
+                    <p class="Books-description"> "Whispers of the Forgotten" is a haunting tale of discovery and loss, as a group of intrepid explorers uncovers the secrets of a civilization long thought extinct.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(96,6%)
+            </div>
+                <img src="images_project\girl_smile_butterflies_602565_1280x720.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Eternal Embers</h2>
+                    <p class="Books-description">"Eternal Embers" is a spellbinding tale of courage, betrayal, and the power of love to transcend the boundaries of time.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(95,6%)
+            </div>
+                <img src="images_project\anime-original-girl-original-anime-wallpaper-preview.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Echoes of the Ancients</h2>
+                    <p class="Books-description"> "Echoes of the Ancients" is a gripping archaeological thriller that explores the depths of human ambition and the consequences of playing god.
+
+                    </p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(95,8%)
+            </div>
+                <img src="images_project\HD-wallpaper-anime-original-blue-eyes-butterfly-girl-water.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Whispers in the Dark</h2>
+                    <p class="Books-description">"Whispers in the Dark" is a pulse-pounding thriller that will keep you on the edge of your seat until the very end.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(92,6%)
+            </div>
+                <img src="images_project\b92336fb9f7319904d5dea07d111e37615a94e04_high.webp" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Veil of Shadows</h2>
+                    <p class="Books-description"> "Veil of Shadows" is an epic tale of redemption, sacrifice, and the eternal struggle between light and darkness.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books"> 
+                  <div class="rating">
+                ★★★★☆(91,2%)
+            </div>
+                <img src="images_project\916871.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Whispers of the Sea</h2>
+                    <p class="Books-description"> "Eternal Echoes" is a sweeping epic that spans centuries, weaving together the lives of heroes and villains in a tapestry of fate and fortune.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(90,2%)
+            </div>
+                <img src="images_project\anime-sakura-tree-road-wallpaper-preview.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Eternal Echoes</h2>
+                    <p class="Books-description"> . "Eternal Echoes" follows the journey of a young historian as she unravels the mysteries of a forgotten civilization, uncovering dark secrets that have lain dormant for centuries</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(93,6%)
+            </div>
+                <img src="images_project\HD-wallpaper-•⊰✿⊱•-mystery-art-fantasy-others.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Echoes of Illusion</h2>
+                    <p class="Books-description"> "Echoes of Illusion" is a mind-bending fantasy adventure that will challenge everything you thought you knew about reality.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★★☆(86,6%)
+            </div>
+                <img src= "images_project\1079713.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Shadows of Fate</h2>
+                    <p class="Books-description">"Shadows of Fate" is a gripping mystery thriller that will keep you guessing until the very end.
+
+                    </p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">   <div class="rating">
+                ★★★☆(78,6%)
+            </div>
+                <img src="images_project\12_mysterious_urban_enchantment_4K_wallpaper-UHD-2160p-AstranoxArtDOTcom.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Eternal Enchantment</h2>
+                    <p class="Books-description">"Eternal Enchantment" follows the adventures of a young sorceress as she navigates the perils of an enchanted world in search of her true destiny.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">  <div class="rating">
+                ★★★★☆(98,6%)
+            </div>
+                <img src="images_project\blue_hair_girl_butterflies_anime_hd_anime_girl-2560x1440.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Echoes of Hope</h2>
+                    <p class="Books-description">"Echoes of Hope" is a heartwarming tale of friendship, courage, and the power of ordinary people to achieve extraordinary things.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Books">
+                <div class="rating">
+                    ★★★★☆(94,6%)
+                </div>
+                <img src="images_project/172475-secre_swallowtail-black_clover-noelle_silva-anime_art-art-4705x2550.jpg" alt="Books 1" class="Books-image">
+                <div class="Books-details">
+                    <h2 class="Books-title">Shadows of Destiny</h2>
+                    <p class="Books-description">Shadows of Destiny" is a thrilling adventure that will keep you guessing until the very end.</p>
+                    <p class="Books-genre">Genre: Fiction</p>
+                    <div class="book-actions">
+                        <span class="heart-icon"><i class="far fa-heart"></i></span>
+                        <button class="read-later-btn">Read Later</button>
+                    </div>
+                </div>
+            </div>     
+        </section>
+        <script >
+
+
+
+
+function createBookElement(book) {
+    const bookElement = document.createElement('div');
+    bookElement.classList.add('Books');
+    bookElement.innerHTML = `
+        <div class="rating">${book.rating}</div>
+        <img src="${book.image}" alt="${book.title}" class="Books-image">
+        <div class="Books-details">
+            <h2 class="Books-title">${book.title}</h2>
+            <p class="Books-description">${book.description}</p>
+            <p class="Books-genre">${book.genre}</p>
+            <div class="book-actions">
+                <span class="heart-icon"><i class="far fa-heart"></i></span>
+                <button class="read-later-btn">Read Later</button>
+            </div>
+        </div>
+    `;
+    return bookElement;
+}
+
+
+
+              function redirectToSpace() {
+        window.location.href = 'space.html';
+    }
+
+            const searchInput = document.getElementById('searchInput');
+            const books = document.querySelectorAll('.Books');
+        
+            searchInput.addEventListener('input', function () {
+                const searchTerm = searchInput.value.toLowerCase();
+        
+                books.forEach(book => {
+                    const title = book.querySelector('.Books-title').textContent.toLowerCase();
+        
+                    if (title.includes(searchTerm)) {
+                        book.style.display = 'block';
+                    } else {
+                        book.style.display = 'none';
+                    }
+                });
+            });
+      
+  
+            document.addEventListener('DOMContentLoaded', function() {
+            const favoriteBooks = new Set(JSON.parse(localStorage.getItem('favoriteBooks')) || []);
+            const readLaterBooks = new Set(JSON.parse(localStorage.getItem('readLaterBooks')) || []);
+            const panierCount = document.querySelector('.panier-count');
+
+            const updatePanierCount = () => {
+                panierCount.textContent = favoriteBooks.size + readLaterBooks.size;
+            };
+
+            document.querySelectorAll('.heart-icon').forEach(icon => {
+                const bookTitle = icon.closest('.Books-details').querySelector('.Books-title').textContent;
+                if (favoriteBooks.has(bookTitle)) {
+                    icon.querySelector('i').classList.remove('far');
+                    icon.querySelector('i').classList.add('fas');
+                }
+
+                icon.addEventListener('click', function() {
+                    if (favoriteBooks.has(bookTitle)) {
+                        favoriteBooks.delete(bookTitle);
+                        icon.querySelector('i').classList.remove('fas');
+                        icon.querySelector('i').classList.add('far');
+                    } else {
+                        favoriteBooks.add(bookTitle);
+                        icon.querySelector('i').classList.remove('far');
+                        icon.querySelector('i').classList.add('fas');
+                    }
+                    localStorage.setItem('favoriteBooks', JSON.stringify(Array.from(favoriteBooks)));
+                    updatePanierCount();
+                });
+            });
+
+            document.querySelectorAll('.read-later-btn').forEach(button => {
+                const bookTitle = button.closest('.Books-details').querySelector('.Books-title').textContent;
+                if (readLaterBooks.has(bookTitle)) {
+                    button.textContent = 'Added';
+                }
+
+                button.addEventListener('click', function() {
+                    if (readLaterBooks.has(bookTitle)) {
+                        readLaterBooks.delete(bookTitle);
+                        button.textContent = 'Read Later';
+                    } else {
+                        readLaterBooks.add(bookTitle);
+                        button.textContent = 'Added';
+                    }
+                    localStorage.setItem('readLaterBooks', JSON.stringify(Array.from(readLaterBooks)));
+                    updatePanierCount();
+                });
+            });
+
+            updatePanierCount();
+        });
+
+        document.getElementById('show-favorites-btn').addEventListener('click', function() {
+    const favoriteBooks = JSON.parse(localStorage.getItem('favoriteBooks')) || [];
+    
+    books.forEach(book => {
+        const title = book.querySelector('.Books-title').textContent;
+        const isFavorite = favoriteBooks.includes(title);
+
+        if (isFavorite) {
+            book.style.display = 'block';
+        } else {
+            book.style.display = 'none';
+        }
+    });
+});
+document.getElementById('show-read-later-btn').addEventListener('click', function() {
+    const readLaterBooks = JSON.parse(localStorage.getItem('readLaterBooks')) || [];
+    
+    books.forEach(book => {
+        const title = book.querySelector('.Books-title').textContent;
+        const isReadLater = readLaterBooks.includes(title);
+
+        if (isReadLater) {
+            book.style.display = 'block';
+        } else {
+            book.style.display = 'none';
+        }
+    });
+});
+function searchByCategory() {
+    const category = document.getElementById('search-category').value;
+
+    books.forEach(book => {
+        const genre = book.querySelector('.Books-genre').textContent.toLowerCase();
+        
+        if (category === 'all' || genre.includes(category)) {
+            book.style.display = 'block';
+        } else {
+            book.style.display = 'none';
+        }
+    });
+}
+
+
+        </script>
+    </main>
+  
+</body>
+</html>

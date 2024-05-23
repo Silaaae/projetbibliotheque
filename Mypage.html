@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css"> 
+    <style>
+
+.content-container {
+    padding: 20px;
+}
+
+.section-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.notification-section .section-container,
+.featured-books-section .section-container,
+.reading-progress-section .section-container,
+.recent-reviews-section .section-container {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.notification-heading,
+.section-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.notification-container,
+.featured-books-container,
+.reading-progress-container,
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notification-card,
+.featured-book-card,
+.progress-card,
+.review-card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.notification-card img,
+.featured-book-card img {
+    width: 100%;
+    height: auto;
+}
+
+.book-title,
+.book-author,
+.progress-title,
+.progress-percentage,
+.review-title,
+.review-author {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.progress {
+    background-color: #76c7c0;
+    border-radius: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.notification-card img,
+ {
+    width: 100%;
+    height: auto;
+}
+
+.book-title,
+.book-author,
+.book-rating,
+.review-title,
+.review-author {
+    font-weight: bold;
+
+}
+.top-rated-books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.top-rated-book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.top-rated-book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.book-quote {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    padding: 10px;
+    border-left: 4px solid #ccc;
+}
+
+
+
+    </style>
+    <title>Document</title>
+    <div class="background"></div>
+    <div class="content-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\projecthtml.html">Home</a></li>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\Discover.html">Generate</a></li>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\Mypage.html">Explore</a> <span class="panier-count">0</span></li>
+                    <li><a href="C:\Users\USER\Desktop\Website.project\login.html">Log IN</a></li>
+
+                </ul>
+            </nav>
+        </header>
+</head>
+<body>
+    <section class="notification-section">
+        <h2 class="notification-heading">Stay Updated!</h2>
+        
+        <div class="notification-container">
+            <div class="notification-card floating">
+                <h3 class="notification-title">New Chapter Available!</h3>
+                <p class="notification-content">Chapter 10 of "The Adventure Begins" is now live. Dive into the adventure now!</p>
+                <p class="notification-date">Posted on May 20, 2024</p>
+            </div>
+            <div class="notification-card clinging">
+                <h3 class="notification-title">Author's Message</h3>
+                <p class="notification-content">The author has shared an important update about upcoming releases. Check it out!</p>
+                <p class="notification-date">Posted on May 18, 2024</p>
+            </div>
+            <div class="notification-card floating">
+                <h3 class="notification-title">New Feature Released!</h3>
+                <p class="notification-content">We've added a new feature to enhance your reading experience. Learn more about it!</p>
+                <p class="notification-date">Posted on May 15, 2024</p>
+            </div>
+            <div class="notification-card clinging">
+                <h3 class="notification-title">Community Event</h3>
+                <p class="notification-content">Join our upcoming community event and meet fellow readers and authors!</p>
+                <p class="notification-date">Posted on May 10, 2024</p>
+            </div>
+        
+        </div>
+        
+        <h2 class="notification-heading">Latest Updates</h2>
+        
+        <div class="notification-container">
+            <div class="notification-card floating">
+                <h3 class="notification-title">Special Offer!</h3>
+                <p class="notification-content">Get a special discount on all books this weekend only. Don't miss out!</p>
+                <p class="notification-date">Posted on May 8, 2024</p>
+            </div>
+            <div class="notification-card clinging">
+                <h3 class="notification-title">Fan Art Contest</h3>
+                <p class="notification-content">Submit your fan art for a chance to be featured on our homepage. Details inside!</p>
+                <p class="notification-date">Posted on May 5, 2024</p>
+            </div>
+            <div class="notification-card floating">
+                <h3 class="notification-title">Site Maintenance</h3>
+                <p class="notification-content">Scheduled maintenance will occur on May 25, 2024. The site may be unavailable for a few hours.</p>
+                <p class="notification-date">Posted on May 2, 2024</p>
+            </div>
+            <div class="notification-card clinging">
+                <h3 class="notification-title">New Author Spotlight</h3>
+                <p class="notification-content">Get to know our featured author of the month and their exciting new book!</p>
+                <p class="notification-date">Posted on April 30, 2024</p>
+            </div>
+         
+        </div>
+    </section>
+
+    <section class="featured-books-section">
+        <h2 class="section-heading">Featured Books</h2>
+        <div class="featured-books-container">
+            <div class="featured-book-card">
+                <img src="C:\Users\USER\Desktop\Website.project\images_project\b92336fb9f7319904d5dea07d111e37615a94e04_high.webp" alt="Book Cover 1">
+                <p class="book-title">Book Title 1</p>
+                <p class="book-author">by Author 1</p>
+            </div>
+            <div class="featured-book-card">
+                <img src="C:\Users\USER\Desktop\Website.project\images_project\anime-girl-wallpaper-4k-best-purple-wallpaper-v0-c2R4ZzMxejg0dXZjMTkzlWbfz3ccF2si-SnE3tJvXXr2koBsiq70Ns-foAoP.webp" alt="Book Cover 2">
+                <p class="book-title">Book Title 2</p>
+                <p class="book-author">by Author 2</p>
+            </div>
+            <div class="featured-book-card">
+                <img src="C:\Users\USER\Desktop\Website.project\images_project\anime-original-girl-original-anime-wallpaper-preview.jpg" alt="Book Cover 3">
+                <p class="book-title">Book Title 3</p>
+                <p class="book-author">by Author 3</p>
+            </div>
+    
+        </div>
+    </section>
+
+ 
+    <section class="reading-progress-section">
+        <h2 class="section-heading">Your Reading Progress</h2>
+        <div class="reading-progress-container">
+            <div class="progress-card">
+                <p class="progress-title">The Shadow Conspiracy</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+                <p class="progress-percentage">70% Completed</p>
+            </div>
+            <div class="progress-card">
+                <p class="progress-title"><Em>Echoes of destiny</Em></p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 45%;"></div>
+                </div>
+                <p class="progress-percentage">45% Completed</p>
+            </div>
+         
+        </div>
+    </section>
+</div>
+  
+    <div class="content-container">
+    <section class="recent-reviews-section">
+        <h2 class="section-heading">Recent Reviews</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <h3 class="review-title">The Shadow Conspiracy</h3>
+                <p class="review-content">"Amazing book! Couldn't put it down."</p>
+                <p class="review-author">- Visitor1087</p>
+            </div>
+            <div class="review-card">
+                <h3 class="review-title">Echoes of destiny</h3>
+                <p class="review-content">"Interesting plot, but the pacing was a bit slow."</p>
+                <p class="review-author">- Visitor6243</p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="top-rated-books-section">
+        <div class="section-container">
+            <h2 class="section-heading">Top Rated Books</h2>
+            <div class="top-rated-books-container">
+                <div class="top-rated-book-card">
+                    <img src="C:\Users\USER\Desktop\Website.project\images_project\girl-magic-art-helmet-wallpaper-preview.jpg" alt="Book Cover 1">
+                    <p class="book-title">The Great Escape</p>
+                    <p class="book-author">by Author 1</p>
+                    <p class="book-rating">Rating: 4.9</p>
+                    <p class="book-comment">"A captivating mystery that keeps you guessing."</p>
+                    <blockquote class="book-quote">"A beautifully written tale that captures the essence of adventure." - Reader789</blockquote> </div>
+                <div class="top-rated-book-card">
+                    <img src="C:\Users\USER\Desktop\Website.project\images_project\desktop-wallpaper-amazing-beautiful-digital-art-in-quality-2013-edition.jpg" alt="Book Cover 2">
+                    <p class="book-title">Mystery of the Lost City</p>
+                    <p class="book-author">by Author 2</p>
+                    <p class="book-rating">Rating: 4.8</p>
+                    <p class="book-comment">"A captivating mystery that keeps you guessing."</p>
+                    <blockquote class="book-quote">"An absolutely stunning read. Every page kept me on the edge of my seat." - Reader123</blockquote>
+                </div>
+                <div class="top-rated-book-card">
+                    <img src="C:\Users\USER\Desktop\Website.project\images_project\girl_smile_butterflies_602565_1280x720.jpg" alt="Book Cover 3">
+                    <p class="book-title">Journey to the Unknown</p>
+                    <p class="book-author">by Author 3</p>
+                    <p class="book-rating">Rating: 4.7</p>
+                    <p class="book-comment">"A captivating mystery that keeps you guessing."</p>
+                    <blockquote class="book-quote">"A perfect blend of suspense and intrigue. Highly recommended!" - Reader456</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> 
+
+</div>
+<footer>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
+</body>
+</html>
